@@ -15,6 +15,7 @@
 		3021A5122792FFA800FB5AF4 /* XcodeCloudGitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021A5112792FFA800FB5AF4 /* XcodeCloudGitTestUITests.swift */; };
 		3021A5142792FFA800FB5AF4 /* XcodeCloudGitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021A5132792FFA800FB5AF4 /* XcodeCloudGitTestUITestsLaunchTests.swift */; };
 		3021A522279304D100FB5AF4 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 3021A521279304D100FB5AF4 /* OneSignal */; };
+		3021A5252793071800FB5AF4 /* BokitFinderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3021A5242793071800FB5AF4 /* BokitFinderKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3021A522279304D100FB5AF4 /* OneSignal in Frameworks */,
+				3021A5252793071800FB5AF4 /* BokitFinderKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 			name = XcodeCloudGitTest;
 			packageProductDependencies = (
 				3021A521279304D100FB5AF4 /* OneSignal */,
+				3021A5242793071800FB5AF4 /* BokitFinderKit */,
 			);
 			productName = XcodeCloudGitTest;
 			productReference = 3021A4F32792FFA700FB5AF4 /* XcodeCloudGitTest.app */;
@@ -222,6 +225,7 @@
 			mainGroup = 3021A4EA2792FFA700FB5AF4;
 			packageReferences = (
 				3021A520279304D100FB5AF4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				3021A5232793071800FB5AF4 /* XCRemoteSwiftPackageReference "bokitfinderkit" */,
 			);
 			productRefGroup = 3021A4F42792FFA700FB5AF4 /* Products */;
 			projectDirPath = "";
@@ -605,6 +609,14 @@
 				kind = branch;
 			};
 		};
+		3021A5232793071800FB5AF4 /* XCRemoteSwiftPackageReference "bokitfinderkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/appiwediateam/bokitfinderkit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -612,6 +624,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3021A520279304D100FB5AF4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
 			productName = OneSignal;
+		};
+		3021A5242793071800FB5AF4 /* BokitFinderKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3021A5232793071800FB5AF4 /* XCRemoteSwiftPackageReference "bokitfinderkit" */;
+			productName = BokitFinderKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

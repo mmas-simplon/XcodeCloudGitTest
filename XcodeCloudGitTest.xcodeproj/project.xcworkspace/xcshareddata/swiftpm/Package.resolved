@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "BokitFinderKit",
+        "repositoryURL": "https://bitbucket.org/appiwediateam/bokitfinderkit",
+        "state": {
+          "branch": "develop",
+          "revision": "e25f26d89550ff271de7d52e31da93c684f238c3",
+          "version": null
+        }
+      },
+      {
         "package": "OneSignal",
         "repositoryURL": "https://github.com/OneSignal/OneSignal-iOS-SDK",
         "state": {
