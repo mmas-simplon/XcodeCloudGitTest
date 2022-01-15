@@ -14,6 +14,7 @@
 		3021A5082792FFA800FB5AF4 /* XcodeCloudGitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021A5072792FFA800FB5AF4 /* XcodeCloudGitTestTests.swift */; };
 		3021A5122792FFA800FB5AF4 /* XcodeCloudGitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021A5112792FFA800FB5AF4 /* XcodeCloudGitTestUITests.swift */; };
 		3021A5142792FFA800FB5AF4 /* XcodeCloudGitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021A5132792FFA800FB5AF4 /* XcodeCloudGitTestUITestsLaunchTests.swift */; };
+		3021A522279304D100FB5AF4 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 3021A521279304D100FB5AF4 /* OneSignal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3021A522279304D100FB5AF4 /* OneSignal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = XcodeCloudGitTest;
+			packageProductDependencies = (
+				3021A521279304D100FB5AF4 /* OneSignal */,
+			);
 			productName = XcodeCloudGitTest;
 			productReference = 3021A4F32792FFA700FB5AF4 /* XcodeCloudGitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 3021A4EA2792FFA700FB5AF4;
+			packageReferences = (
+				3021A520279304D100FB5AF4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			productRefGroup = 3021A4F42792FFA700FB5AF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3021A520279304D100FB5AF4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3021A521279304D100FB5AF4 /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3021A520279304D100FB5AF4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3021A4EB2792FFA700FB5AF4 /* Project object */;
 }
